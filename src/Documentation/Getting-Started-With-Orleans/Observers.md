@@ -72,7 +72,7 @@ class HelloGrain : Grain, IHello
     //Also clients use this to unsubscribe themselves to no longer receive the messages.
     public async Task UnSubscribe(IChat observer)
     {
-        _SubsManager.Unsubscribe(observer);
+        _subsManager.Unsubscribe(observer);
     }
 }
 ```
